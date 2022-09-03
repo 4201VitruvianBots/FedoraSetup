@@ -22,13 +22,18 @@ Files and instructions to set up a desktop with Fedora installed
 
 - Disable Pocket on home page
 - Set Home Page to firefox home
+- Open all windows and tabs on startup
 
 ## Aesthetic
 
-- GNOME Tweaks and GNOME Extensions (optional)
+- GNOME Tweaks
+    - Legacy Applications -> Adwaita Dark
+- GNOME Extensions (optional)
     - Blur my Shell
     - Tiling Assistant
     - Removable Drive Menu
     - Launch New Instance
+    - Static background in overview
+    - Dash to Dock
 - Dark Theme
 - Colored prompt
