@@ -7,6 +7,7 @@ Files and instructions to set up a desktop with Fedora installed
 - VSCode
 - IntelliJ
 - Slack
+- GitKraken
 - Keybindings
     - Alt+Tab to Switch Window
     - Super+Tab to Switch Application
