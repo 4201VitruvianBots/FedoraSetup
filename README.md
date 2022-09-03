@@ -2,6 +2,9 @@
 
 Files and instructions to set up a desktop with Fedora installed
 
+- DNF config file
+- DNF Update
+- Vim
 - Enable RPM Fusion
 - Add Flathub
 - VSCode
@@ -14,6 +17,11 @@ Files and instructions to set up a desktop with Fedora installed
     - Ctrl+Alt+T to GNOME Terminal
 - Media Codecs
 - Set hostname
+
+## Firefox
+
+- Disable Pocket on home page
+- Set Home Page to firefox home
 
 ## Aesthetic
 
