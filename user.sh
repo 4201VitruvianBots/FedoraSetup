@@ -1,5 +1,10 @@
 #!/bin/sh
 
+if [ `whoami` = root ]; then
+    echo "You must run this as your user!"
+    exit 1
+fi
+
 dconf write /org/gnome/desktop/interface/color-scheme "'prefer-dark'"
 dconf write /org/gnome/desktop/background/picture-options "'zoom'"
 dconf write /org/gnome/desktop/background/picture-uri "'file:///usr/share/backgrounds/f36/default/f36.xml'"
@@ -11,11 +16,6 @@ dconf write /org/gnome/desktop/screensaver/picture-uri "'file:///usr/share/backg
 dconf write /org/gnome/desktop/screensaver/primary-color "'#000000000000'"
 dconf write /org/gnome/desktop/screensaver/secondary-color "'#000000000000'"
 dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/binding "'<Control><Alt>t'"
-if [ `whoami` = root ]; then
-    echo "You must run this as your user!"
-    exit 1
-fi
-
 dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/command "'gnome-terminal'"
 dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/name "'terminal'"
 dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings ["'/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/'"]
