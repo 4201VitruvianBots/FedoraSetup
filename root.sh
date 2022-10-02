@@ -3,7 +3,8 @@
 #echo "This script is not ready for usage yet!"
 #exit 2
 
-read -p "Hostname: " hostname
+echo -n "Hostname: "
+read hostname
 hostnamectl hostname $hostname
 
 #mkdir /tmp/work
