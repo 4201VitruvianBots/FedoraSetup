@@ -22,7 +22,7 @@ flatpak update
 dnf install -y vim
 
 dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
-flatpak remote-add -y --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak install -y com.visualstudio.code
 flatpak install -y com.jetbrains.IntelliJ-IDEA-Community
 flatpak install -y com.slack.Slack
