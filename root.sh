@@ -24,7 +24,6 @@ dnf install -y vim
 
 dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak install -y com.visualstudio.code
 flatpak install -y com.jetbrains.IntelliJ-IDEA-Community
 flatpak install -y com.slack.Slack
 flatpak install -y com.axosoft.gitkraken
@@ -32,6 +31,12 @@ dnf install -y google-chrome-stable
 dnf install -y gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel
 dnf install -y lame\* --exclude=lame-devel
 dnf group upgrade -y --with-optional Multimedia
+
+
+
+rpm --import https://packages.microsoft.com/keys/microsoft.asc
+echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo
+dnf install code
 
 # TODO Firefox config
 
